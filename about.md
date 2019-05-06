@@ -5,17 +5,13 @@ description: "Stay Hungry, Stay Foolish"
 header-img: "img/green.jpg"
 ---
 
-## Nickname
+## Info
 
 bookug
-
-时间煮酒
 
 ---
 
 ## Project
-
-[GitHub](https://github.com/bookug)
 
 [Linux Programming](https://github.com/bookug/LinuxProgramming)
 
@@ -25,16 +21,7 @@ bookug
 
 ---
 
-
-## To Be Continued
-
-qiniuyun and pay code
-
-this site can also be used as CV and technical blog
-
----
-
-# Idiom
+## My Motto
 
 > Let it be, Live with heart, and that is the Life Winner.
 
@@ -45,5 +32,15 @@ this site can also be used as CV and technical blog
 ## Contact
 
 Email: bookug@qq.com
+
+GitHub: https://github.com/bookug
+
+---
+
+## AliPay
+
+![](img/alipay.jpg)
+
+---
 
 
