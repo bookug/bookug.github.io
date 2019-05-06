@@ -6,4 +6,4 @@
 
 
 
-technical blog
+technical blog: vimrc(.vim/vimrc),   rm command

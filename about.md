@@ -8,24 +8,24 @@ header-img: "img/green.jpg"
 ## Info
 
 - Nickname: bookug, a man who experience a lot
-- Interest: Life, Thinking, Nature, Literature, Science, Technique
-- Ability: Coding, Research, Cooking, PingPong
+- Interest: Life, Thinking, Reading, Technique
+- Ability: Coding, Writing, Research, Cooking, PingPong
+- Status: student, not for hiring
 
+---
 
-
-My Motto
+## My Motto
 
 > Let it be, Live with heart, and that is the Life Winner.
-
 > 随缘度日，用心生活，此即人生赢家。
 
 ---
 
 ## Project
 
-[Linux Programming](https://github.com/bookug/LinuxProgramming)
-
 [Paper Notes](https://github.com/bookug/PaperNotes)
+
+[Linux Programming](https://github.com/bookug/LinuxProgramming)
 
 [gStore](https://github.com/pkumod/gStore)
 
@@ -33,9 +33,9 @@ My Motto
 
 ## Contact
 
-Email: bookug@qq.com
+Email: <bookug@qq.com>
 
-GitHub: https://github.com/bookug
+GitHub: <https://github.com/bookug>
 
 ---
 
