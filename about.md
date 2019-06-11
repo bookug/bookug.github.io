@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About"
-description: "Stay Hungry, Stay Foolish"
+description: "Afflictions are sometimes blessings in disguise."
 header-img: "img/green.jpg"
 ---
 
@@ -33,9 +33,7 @@ header-img: "img/green.jpg"
 
 ## Contact
 
-Email: <bookug@qq.com>
-
-GitHub: <https://github.com/bookug>
+![](img/email.jpg)
 
 ---
 

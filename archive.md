@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Archive"
-description: "Experience is Writing, Writing is Experience"
+description: "求知若饥，虚心若愚"
 header-img: "img/orange.jpg"
 ---
 
