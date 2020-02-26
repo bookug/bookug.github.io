@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Archive"
-description: "求知若饥，虚心若愚"
+description: "Afflictions are sometimes blessings in disguise."
 header-img: "img/orange.jpg"
 ---
 
@@ -19,3 +19,4 @@ header-img: "img/orange.jpg"
   </li>
 {% endfor %}
 </ul>
+

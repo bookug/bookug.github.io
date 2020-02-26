@@ -1,18 +1,15 @@
 ---
 layout: page
 title: "Tags"
-description: "哈哈，你找到了我的文章基因库"  
+description: "Let it be, live with heart, and that is the life winner."  
 header-img: "img/Red-Brown.jpg"  
 ---
 
-## 本页使用方法
+## Usage of this page
 
-1. 在下面选一个你喜欢的词
-2. 点击它
-3. 相关的文章会「唰」地一声跳到页面顶端
-4. 马上试试？
-
-## 基因列表
+1. Choose one word you like below.
+2. Click it.
+3. Then related essays will present on the top.
 
 
 <div id='tag_cloud'>
@@ -44,3 +41,4 @@ $(function () {
     $('#tag_cloud a').tagcloud();
 });
 </script>
+
