@@ -12,8 +12,5 @@ technical blog: vimrc(.vim/vimrc),   rm command
 
 
 
-
-
-
-
 curriculum viate（CV）
+
