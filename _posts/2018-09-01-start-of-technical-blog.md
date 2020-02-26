@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Start of Technical Blog
-date: 2019-05-06
+date: 2018-09-01
 categories: blog
 tags: [Technical Blog]
 description: Technique is the wing that help you fly.
