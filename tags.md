@@ -11,7 +11,6 @@ header-img: "img/Red-Brown.jpg"
 {% endfor %}
 </div>
 
-<br>
 <hr>
 
 <div id="tag_posts">
