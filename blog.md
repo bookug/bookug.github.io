@@ -7,8 +7,10 @@ header-img: "img/blue.jpg"
 
 If these help you, please donate via the AliPay code below.
 
+![](img/alipay.jpg)
+
 (*<img src="img/alipay.jpg"  height="400"  />*)
-<img src="img/alipay.jpg"  height="400" width="300" />
+(*<img src="img/alipay.jpg"  height="400" width="300" />*)
 
 ---
 
