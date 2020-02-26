@@ -7,7 +7,8 @@ header-img: "img/blue.jpg"
 
 If these help you, please donate via the AliPay code below.
 
-<img src="img/alipay.jpg" align="MIDDLE" hspace="7" height="300">
+(*<img src="img/alipay.jpg"  height="400"  />*)
+<img src="img/alipay.jpg"  height="400" width="300" />
 
 ---
 
