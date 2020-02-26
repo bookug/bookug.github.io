@@ -7,8 +7,6 @@ tags: [Life Journal]
 description: Innovation is to find out something what all neglects or misunderstand.
 ---
 
-Oct 10, 2018   Sunny but cold
-
 This days is busy but peaceful, which is my ideal life. 
 If one is in one state, it will be very difficult for him to change his state, whether his current state is good or not.
 Habit can help us in some conditions, but it can also be harmful.

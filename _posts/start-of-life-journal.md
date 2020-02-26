@@ -7,8 +7,6 @@ tags: [Life Journal]
 description: Experience is Writing, Writing is Experience
 ---
 
-Sep 1, 2018   Sunny
-
 English is important in many aspects: writing papers, chating with foreigners, reading materials and so on.
 A good way to learn and practice English is writing life journals in English.
 I heard that the best way to learn something is to bring it to your life.

@@ -7,8 +7,6 @@ tags: [Technical Blog]
 description: Technique is the wing that help you fly.
 ---
 
-May 6, 2019   Sunny
-
 Technique is the wing that help you fly.
 
 **Stay Hungry, Stay Foolish.**
