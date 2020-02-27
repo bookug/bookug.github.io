@@ -31,8 +31,7 @@ layout: default
 <header>
     <div align="MIDDLE" style="float:middle">
                         {% for tag in page.tags %}
-                        <a class="tag" href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
-                        <!--[<a class="tag" href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>]&nbsp;-->
+                        [<a class="tag" href="/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>]&nbsp;
                         {% endfor %}
                     <h1>{{ page.title }}</h1>
                     {% if page.subtitle %}
