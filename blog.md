@@ -7,7 +7,7 @@ header-img: "img/green.jpg"
 
 If these help you, please donate via the AliPay code below.
 
-![](img/alipay.jpg =300x400)
+<img src="img/alipay.jpg" align="MIDDLE" width="300" />
 
 ---
 
