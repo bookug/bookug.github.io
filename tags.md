@@ -2,7 +2,7 @@
 layout: page
 title: "Tags"
 description: "Let it be, live with heart, and that is the life winner."  
-header-img: "img/Red-Brown.jpg"  
+header-img: "img/green.jpg"  
 ---
 
 <div id='tag_cloud'>

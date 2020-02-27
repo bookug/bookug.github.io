@@ -2,15 +2,12 @@
 layout: page
 title: "Blog"
 description: "Experience is Writing, Writing is Experience."
-header-img: "img/blue.jpg"
+header-img: "img/green.jpg"
 ---
 
 If these help you, please donate via the AliPay code below.
 
 ![](img/alipay.jpg =300x400)
-
-(*<img src="img/alipay.jpg"  height="400"  />*)
-(*<img src="img/alipay.jpg"  height="400" width="300" />*)
 
 ---
 
