@@ -3,7 +3,7 @@ layout: post
 title: Thoughts of Research
 date: 2018-10-10
 categories: blog
-tags: [Life Journal, Research]
+tags: [Life Journal,Research]
 description: Innovation is to find out something what all neglects or misunderstand.
 ---
 
