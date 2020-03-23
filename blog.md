@@ -5,11 +5,13 @@ description: "Experience is Writing, Writing is Experience."
 header-img: "img/green.jpg"
 ---
 
+<!--
 If these help you, please donate via the AliPay code below.
 
 <img src="/../img/alipay.jpg" align="MIDDLE" width="200" />
 
 ---
+-->
 
 <ul class="listing">
 {% for post in site.posts %}
@@ -25,5 +27,5 @@ If these help you, please donate via the AliPay code below.
 {% endfor %}
 </ul>
 
-
+---
 
