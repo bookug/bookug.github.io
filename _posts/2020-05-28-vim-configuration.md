@@ -116,9 +116,13 @@ Plugin 'VundleVim/Vundle.vim'
 " TODO: doxygen vim
 " https://blog.csdn.net/zistxym/article/details/7432693
 
+"NOTICE: Below only works for fcitx input methods
+"Plugin 'edkolev/tmuxline.vim'
+"Plugin 'lilydjwg/fcitx.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+" https://github.com/Chiel92/vim-autoformat
 " code format: http://aiezu.com/article/linux_vim_plugin_autoformat_install.html
 " https://www.cnblogs.com/lepeCoder/p/8032178.html
 Plugin 'Chiel92/vim-autoformat'
@@ -152,7 +156,7 @@ Plugin 'vim-scripts/cscope.vim'
 "http://blog.sina.com.cn/s/blog_64e527a30100xasw.html
 "Plugin 'ludovicchabant/vim-gutentags'
 " http://www.wklken.me/posts/2015/06/07/vim-plugin-ctrlp.html
-Plugin 'kien/ctrlp.vim'
+"Plugin 'kien/ctrlp.vim'
 "this is for git symbol in powerline
 Plugin 'tpope/vim-fugitive'
 "Fold in Vim
@@ -162,7 +166,7 @@ Plugin 'tpope/vim-fugitive'
 "Plugin 'vim-scripts/indentpython.vim'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
-"Plugin 'jiangmiao/auto-pairs'
+Plugin 'jiangmiao/auto-pairs'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mbbill/undotree'
@@ -258,6 +262,7 @@ colorscheme ron
 "colorscheme railscasts
 "colorscheme twilight
 "colorscheme candy
+colorscheme bookug "my own color scheme
 "vim own colors:  /usr/share/vim/vim74/colors/
 "colorscheme desert
 "colorscheme morning
@@ -498,14 +503,14 @@ au BufRead,BufNewFile *  setfiletype txt
 "自动补全
 "":inoremap < <><ESC>i
 "":inoremap > <c-r>=ClosePair('>')<CR>
-:inoremap ( ()<ESC>i
-:inoremap ) <c-r>=ClosePair(')')<CR>
+":inoremap ( ()<ESC>i
+":inoremap ) <c-r>=ClosePair(')')<CR>
 ":inoremap { {<CR>}<ESC>O
 ":inoremap } <c-r>=ClosePair('}')<CR>
-:inoremap [ []<ESC>i
-:inoremap ] <c-r>=ClosePair(']')<CR>
-:inoremap " ""<ESC>i
-:inoremap ' ''<ESC>i
+":inoremap [ []<ESC>i
+":inoremap ] <c-r>=ClosePair(']')<CR>
+":inoremap " ""<ESC>i
+":inoremap ' ''<ESC>i
 func! ClosePair(char)
     if getline('.')[col('.') - 1] == a:char
         return "\<Right>"
@@ -694,30 +699,30 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-" ctrap
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.png,*.jpg,*.jpeg,*.gif " MacOSX/Linux
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-if executable('ag')
-    " Use Ag over Grep
-    set grepprg=ag\ --nogroup\ --nocolor
-    " Use ag in CtrlP for listing files.
-    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-    " Ag is fast enough that CtrlP doesn't need to cache
-    let g:ctrlp_use_caching = 0
-endif
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_open_multiple_files = 'v'         " <C-Z><C-O>时垂直分屏打开多个文件
-"let g:ctrlp_custom_ignore = {
-"  \ 'dir':  '\v[\/]\.(git)$',
-"  \ 'file': '\v\.(log|jpg|png|jpeg)$',
-"  \ }
-let g:ctrlp_working_path_mode= 'ra'
-let g:ctrlp_match_window_bottom= 1
-let g:ctrlp_max_height= 10
-let g:ctrlp_match_window_reversed=0
-let g:ctrlp_mruf_max=500
-let g:ctrlp_follow_symlinks=1
+" ctrlp
+"set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.png,*.jpg,*.jpeg,*.gif " MacOSX/Linux
+"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+"if executable('ag')
+"    " Use Ag over Grep
+"    set grepprg=ag\ --nogroup\ --nocolor
+"    " Use ag in CtrlP for listing files.
+"    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+"    " Ag is fast enough that CtrlP doesn't need to cache
+"    let g:ctrlp_use_caching = 0
+"endif
+"let g:ctrlp_map = '<c-p>'
+"let g:ctrlp_cmd = 'CtrlP'
+"let g:ctrlp_open_multiple_files = 'v'         " <C-Z><C-O>时垂直分屏打开多个文件
+""let g:ctrlp_custom_ignore = {
+""  \ 'dir':  '\v[\/]\.(git)$',
+""  \ 'file': '\v\.(log|jpg|png|jpeg)$',
+""  \ }
+"let g:ctrlp_working_path_mode= 'ra'
+"let g:ctrlp_match_window_bottom= 1
+"let g:ctrlp_max_height= 10
+"let g:ctrlp_match_window_reversed=0
+"let g:ctrlp_mruf_max=500
+"let g:ctrlp_follow_symlinks=1
 
 
 "vim-powerline
@@ -1003,7 +1008,7 @@ set expandtab
 "BETTER: use emacs or drracket
 "http://blog.csdn.net/u011500307/article/details/34452011
 
-"TODO: there is some bug. how to use ALT?
+"How to use ALT in VIM?
 "http://www.zhixing123.cn/ubuntu/55731.html
 "https://zhuanlan.zhihu.com/p/20902166
 "if !has('gui_running')
@@ -1011,16 +1016,17 @@ set expandtab
 "endif
 "noremap <Esc>x :echo "ALT-X pressed"<cr>
 "settings of multiple cursors
-"let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_use_default_mapping=0
 " Default mapping
 "let g:multi_cursor_start_word_key      = '<C-n>'
 "let g:multi_cursor_select_all_word_key = '<A-n>'
 "let g:multi_cursor_start_key           = 'g<C-n>'
 "let g:multi_cursor_select_all_key      = 'g<A-n>'
-"let g:multi_cursor_next_key            = '<C-n>'
-"let g:multi_cursor_prev_key            = '<C-p>'
-"let g:multi_cursor_skip_key            = '<C-x>'
-"let g:multi_cursor_quit_key            = '<Esc>'
+"Below is required
+let g:multi_cursor_next_key            = '<C-m>'
+let g:multi_cursor_prev_key            = '<C-p>'
+let g:multi_cursor_skip_key            = '<C-x>'
+let g:multi_cursor_quit_key            = '<Esc>'
 
 
 
@@ -1104,6 +1110,8 @@ nmap <leader>v "+gp
 map <F12> <Esc>ggVG"+Y
 
 
+" Use clang-format for vim:  2 spaces indent for C++, { not at new line, function parameters alignment, etc.
+" clang-format -style=llvm -dump-config > .clang-format
 " F3自动格式化代码
 "noremap <F3> :Autoformat<CR>
 let g:autoformat_verbosemode=0   "no detail information
@@ -1200,8 +1208,9 @@ let g:grammarous#show_first_error=1
 "zg
 "zw
 " for vim latex
-"let g:tex_flavor='pdflatex'
-let g:tex_flavor='latex'
+" https://jdhao.github.io/2019/03/26/nvim_latex_write_preview/
+let g:tex_flavor='pdflatex'
+"let g:tex_flavor='latex'
 let g:vimtex_view_method='general'
 let g:vimtex_view_general='evince'
 let g:vimtex_quickfix_mod=0
@@ -1221,5 +1230,17 @@ let base16colorspace=256
 "colorscheme gotham
 colorscheme gotham256
 colorscheme zenburn
+
+"Different tab settings for different file types
+"https://vim.fandom.com/wiki/Indenting_source_code
+autocmd FileType c,cpp setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd FileType python setlocal expandtab shiftwidth=4 softtabstop=4
+
+"https://zhuanlan.zhihu.com/p/25801800
+"https://vimjc.com/vim-display-unprintable-character.html
+"set list
+"set listchars=tab:·
+",eol:↩︎,trail:-↩
 ```
 
