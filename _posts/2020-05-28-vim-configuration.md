@@ -7,7 +7,62 @@ tags: [Technical Blog]
 description: Technique is the wing that help you fly.
 ---
 
-## install vim82 on Linux
+## Build  and use docker-vim
+
+Let's bring Vim anywhere!
+
+https://www.jianshu.com/p/93972f0df163
+
+An example can be pulled from `bookug/zvim`.
+
+Or you can build one from Dockerfile below, please modify it as you wish.
+
+```
+FROM scratch
+ADD centos-8-x86_64.tar.xz /
+
+LABEL org.label-schema.schema-version="1.0" \
+    org.label-schema.name="CentOS Base Image" \
+    org.label-schema.vendor="CentOS" \
+    org.label-schema.license="GPLv2" \
+    org.label-schema.build-date="20200611"
+
+CMD ["/bin/bash"]
+
+ADD ./install.sh /usr/local
+ADD ./vim /root/.vim
+ADD ./Centos-8.repo /root/Centos-8.repo
+
+#运行install.sh脚本进行实际的安装工作
+RUN /usr/local/install.sh
+```
+
+The script `install.sh` is given below:
+
+```
+mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
+mv /root/Centos-8.repo /etc/yum.repos.d/CentOS-Base.repo
+yum clean all
+yum list
+yum makecache
+
+# 安装所有依赖的组件
+yum install -y vim git curl ctags cscope python3-devel make cmake gcc gcc-c++ clang-devel
+echo "-->download vundle to manage vim plugins..."
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# 安装vim插件
+vim -c PluginInstall -c q -c q
+
+# 安装插件运行需要依赖的一些组件
+pip3 install autopep8
+cd /root/.vim/bundle/YouCompleteMe/ && python3 install.py --clang-complete
+
+```
+
+---
+
+## Install vim82 on Linux
 
 pre-install x11-devel xtst-devel xt-devel sm-devel xpm-devel
 
