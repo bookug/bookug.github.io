@@ -193,10 +193,6 @@ My research interests include database optimization, GPU computing and graph alg
             </td>
           </tr>
 
-
-
-
-
       <tr>
         <td colspan="10" width="930">&nbsp;
         </td>
@@ -205,6 +201,16 @@ My research interests include database optimization, GPU computing and graph alg
         <td colspan="10" width="930">&nbsp;
         </td>
       </tr>
+
+</table>
+
+
+
+<HR align=center width=930 color=#8E8E8E SIZE=1>
+
+    <table border="0" cellpadding="0" cellspacing="0" width="930" align="center" bgcolor="#FFFFFF">
+
+
 
       <tr>
         <td colspan="4" width="930" align="left">
@@ -213,15 +219,39 @@ My research interests include database optimization, GPU computing and graph alg
 
      <tr>
         <td width="930" align="left" valign="middle">
+            <b>Improvement of Graph Machine Learning System</b>
+            <ul>
+                <li> <b>Distributed data loading of hybrid features</b>: Redesign the architecture of data loading module to support hybrid features on node/edge, optimize the parsing of feature string and yield >2× speedup. </li>
+                <li> <b>Distributed real-time sampling in data loading</b>: Create memory clip module. During data loading, if memory is not enough, a clipping will be performed on graph store. The sampling function used in clipping is defined by users. 
+                    <b>Contribution</b>: reduce the memory consumption greatly (31%) with little decrease in model effect (1%). </li>
+            </ul>
+        </td>
+      </tr>
+
+     <tr>
+        <td width="930" align="left" valign="middle">
+            <b>Acceleration of Large Scale Graph Algorithms</b>
+            <ul>
+                <li> <b>Survey and optimization of subgraph isomorphism on CPU</b>: survey the best solutions of subgraph isomorphism on CPU and propose four general techniques for improvement   </li> 
+                <li> <b>Acceleration of subgraph isomorphism on GPU</b>: novel data structure and join algorithm, >10× speedup </li>
+                <li> <b>Acceleration of other graph algorithms on GPU</b>: optimize solutions of shortest path and triangle counting, both achieve >2× speedup </li>
+            </ul>
+        </td>
+      </tr>
+
+
+     <tr>
+        <td width="930" align="left" valign="middle">
+            <b>Development of Graph Database System</b>
             As the primary developer of graph database <a href="http://www.gstore.cn/pcsite/index.html"><b>gStore</b></a>, cumulatively update 5,000,000 lines of code, greatly improve the performance (100×) and scale (40×).
 Meanwhile, accumulate experience of leading a team (>10 people), make them qualified for every module respectively.
             <!--Prime developer and maintainer of graph database system <a href="https://github.com/pkumod/gStore">gStore</a>.-->
             <!--<br />-->
             <!--My Contributions are as follows:-->
             <ul>
-                <li> Optimization of query plans: accelerate SPARQL queries, support predicate variable and property path  </li>
-                <li> Improvement of indices: continually optimize the disk-based key-value indices (specially designed for gStore) </li>
-                <li> Others: improve user interface, create web server, standardize the development, add documents of design and usage </li>
+                <li> <b>Optimization of query plans</b>: accelerate SPARQL queries, support predicate variable and property path  </li>
+                <li> <b>Improvement of indices</b>: continually optimize the disk-based key-value indices (specially designed for gStore) </li>
+                <li> <b>Others</b>: improve user interface, create web server, standardize the development, add documents of design and usage </li>
                 <!--<li> Greatly improve the efficiency (100x speedup) and scalability (40x larger RDF dataset). </li>-->
                 <!--<li> Adjust the project structure and user interface. </li>-->
                 <!--<li> Explore research opportunities like query plan optimization and GPU acceleration.</li>-->
